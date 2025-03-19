@@ -1,0 +1,69 @@
+@use "variables" as *;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == tablet {
+        @media (min-width: 768px) { @content; }
+    }
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: $font-family-secondary;
+    font-size: $font-size-body;
+    font-weight: $font-weight-light;
+    line-height: 1.5;
+}
+
+.container {
+    margin: 0 auto;
+    width: $container-width;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: $white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: $font-family-primary;
+    line-height: 1.4;
+    font-weight: $font-weight-semibold;
+    color: $very-dark-cyan ;
+}
+
+.cta-button {
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: $font-weight-semibold;
+    color: $white;
+    background-color: $primary-color;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: hsl(322, 100%, 66%, 70%);
+    }
+
+    @include respond(tablet) {
+        padding: 1rem 2.5rem;
+        border-radius: 999px;
+    }
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
