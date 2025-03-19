@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Gitthub](https://github.com/zardrick/huddle-landing-page-with-alternating-feature-blocks)
+- Solution URL: [Github](https://github.com/zardrick/huddle-landing-page-with-alternating-feature-blocks)
 - Live Site URL: [Live Site](https://zardrick.github.io/huddle-landing-page-with-alternating-feature-blocks)
 
 ## My Process
